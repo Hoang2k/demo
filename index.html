@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In | Glassdoor</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <div class="app">
+       
+            <header class="header">
+                  <div class="header-logo">
+                     <a href="#" target="_top" aria-label="Glassdoor" data-test="header-glassdoor-logo"><svg style="line-height: 48px;" width="121" height="48" title="Glassdoor Logo" viewBox="514 1654 121 24" xmlns="http://www.w3.org/2000/svg"><path d="M635 1659.548a.413.413 0 0 0-.212-.336c-.274-.138-.674-.232-1.488-.232-1.837 0-3.462.912-4.171 2.438v-1.864a.292.292 0 0 0-.292-.293h-2.751a.292.292 0 0 0-.292.293v12.566c0 .161.13.292.292.292h2.882a.292.292 0 0 0 .292-.292v-5.652c0-2.525 1.756-3.78 4.04-3.78.533 0 1.065.118 1.332.206.183.06.368-.09.368-.283v-3.063zm-18.415 9.78c-1.97 0-3.493-1.393-3.493-3.497s1.524-3.498 3.493-3.498c1.969 0 3.492 1.394 3.492 3.498s-1.523 3.498-3.492 3.498zm0-10.389c-4.044 0-7.063 2.789-7.063 6.892s3.02 6.891 7.063 6.891c4.042 0 7.062-2.788 7.062-6.89 0-4.104-3.02-6.893-7.062-6.893zm-16.034 10.39c-1.97 0-3.493-1.394-3.493-3.498s1.523-3.498 3.493-3.498c1.969 0 3.491 1.394 3.491 3.498s-1.522 3.498-3.491 3.498zm0-10.39c-4.044 0-7.064 2.789-7.064 6.892s3.02 6.891 7.064 6.891c4.042 0 7.062-2.788 7.062-6.891s-3.02-6.892-7.062-6.892zm-16.012 10.422c-1.969 0-3.44-1.394-3.44-3.524 0-2.131 1.471-3.525 3.44-3.525 1.944 0 3.44 1.342 3.44 3.525 0 2.156-1.496 3.524-3.44 3.524zm6.509-15.36h-2.882a.292.292 0 0 0-.292.292v6.862c-.893-1.263-2.363-2.237-4.41-2.237-3.204 0-5.935 2.474-5.935 6.919 0 4.445 2.73 6.917 5.986 6.917 1.917 0 3.414-.842 4.36-2.183v1.549c0 .161.13.292.29.292h2.883c.16 0 .291-.13.291-.292v-17.827a.292.292 0 0 0-.291-.292zm-15.428 14.43c0 3-2.179 4.288-5.67 4.288-2.413 0-4.488-.65-5.675-1.996a.3.3 0 0 1-.007-.38l1.666-2.166a.287.287 0 0 1 .437-.017c.88.903 2.234 1.455 3.92 1.455.97 0 1.758-.262 1.758-.999 0-.71-.708-.868-2.914-1.342-1.943-.394-4.359-1.288-4.359-4.155 0-2.657 2.102-4.182 5.54-4.182 2.263 0 3.89.684 5.036 1.76.11.103.12.277.027.396l-1.581 2.056c-.1.131-.29.157-.414.046-.775-.693-2.064-1.128-3.33-1.128-1.076 0-1.68.342-1.68.92 0 .658.71.816 3.046 1.316 2.283.5 4.2 1.367 4.2 4.129zm-13.326.008c0 2.999-2.18 4.288-5.671 4.288-2.412 0-4.487-.65-5.674-1.997a.3.3 0 0 1-.008-.379l1.666-2.167a.288.288 0 0 1 .437-.016c.881.902 2.235 1.455 3.92 1.455.971 0 1.759-.262 1.759-1 0-.71-.709-.867-2.914-1.341-1.944-.395-4.36-1.289-4.36-4.155 0-2.657 2.102-4.182 5.541-4.182 2.262 0 3.888.683 5.035 1.76.11.103.12.276.028.396l-1.582 2.056c-.1.13-.29.156-.413.046-.776-.693-2.064-1.129-3.33-1.129-1.077 0-1.681.343-1.681.921 0 .658.71.816 3.046 1.316 2.284.499 4.2 1.367 4.2 4.128zm-17.273-1.34c0 1.446-1.18 2.709-3.019 2.709-1.208 0-1.864-.553-1.864-1.395 0-.736.552-1.289 1.628-1.447l3.255-.394v.526zm-2.283-8.128c-2.75 0-4.821.922-5.747 2.745a.298.298 0 0 0 .095.372l2.101 1.504c.132.094.318.063.397-.08.584-1.052 1.89-1.411 3.154-1.411 1.549 0 2.283.552 2.283 1.315v.21c0 .316-.183.474-.682.527l-3.597.315c-2.415.236-4.2 1.736-4.2 4.129 0 2.42 1.837 4.103 4.436 4.103 2.048 0 3.361-.999 4.043-2.051v1.496c0 .162.13.293.292.293h2.882a.292.292 0 0 0 .292-.292v-7.836c0-3.656-1.917-5.339-5.75-5.339zm-8.574-4.679v17.827c0 .161-.13.292-.292.292h-2.908a.292.292 0 0 1-.292-.292v-17.832c0-.159.128-.287.286-.287h2.914c.161 0 .292.13.292.292zm-13.154 15.055c-1.97 0-3.44-1.394-3.44-3.524s1.471-3.525 3.44-3.525c1.97 0 3.413 1.342 3.413 3.525 0 2.156-1.444 3.524-3.413 3.524zm6.508-10.1h-2.878a.296.296 0 0 0-.296.296v1.546c-.735-1.184-2.258-2.158-4.279-2.158-3.256 0-6.065 2.447-6.065 6.84 0 4.365 2.678 6.758 6.17 6.758 1.89 0 3.36-.789 4.227-2.025v.842c0 1.893-.92 3.393-3.86 3.393-1.478 0-2.665-.493-3.706-1.416a.286.286 0 0 0-.438.061l-1.305 2.192c-.169.283-.146.443-.04.536 1.342 1.167 3.086 1.888 5.621 1.888 5.513 0 7.141-3.076 7.141-6.47v-11.99a.292.292 0 0 0-.292-.293z" fill="#0caa41" fill-rule="evenodd"></path></svg></a>
+                  </div>
+            </header>
+            
+               <div class="login-form">
+                <div class="container">
+                    <div class="content">
+                        <div class="login-form__header">
+                            <h1 class="login-form__heading">Sign In to Glassdoor</h1>
+                        </div>
+                       
+                        <div class="login-form__policy">
+                            <p>By continuing, you agree to our 
+                                 <a href="" >Terms of Use</a> and 
+                                 <a href="">Privacy Policy</a>
+                                 </p>
+                           
+                        </div>
+                        <div class="social">
+                             <div class="social-facebook">
+                               
+                                 <button class="social-facebook__btn ">
+                                  
+                                     <span class="fb-logo"><i  style="font-size: 22px;    line-height: 38px;"
+            class="fab fa-facebook"></i></span>
+                                     <span class="fb-continue">Continue with Facebook</span>
+                                  
+                                 </button>
+                             </div>
+                             <div class="social-google">
+                                 <button class=" google-btn">
+                                   
+                                     <span class="google-btn__span"><svg class="SVGInline-svg" xmlns="http://www.w3.org/2000/svg" style="width: 21px;height: 21px;" viewBox="0 0 46 46"><path d="M23 8.9a12.75 12.75 0 018.9 3.4L38.37 6A22.1 22.1 0 0023 0 23 23 0 002.45 12.68l7.44 5.78A13.9 13.9 0 0123 8.9z" fill="#ea4335"></path><path d="M45.08 23.5a19.7 19.7 0 00-.5-4.7H23v8.55h12.68A11.24 11.24 0 0131 34.8l7.26 5.63c4.34-4 6.85-9.92 6.85-16.92z" fill="#4285f4"></path><path d="M9.92 27.55A14.16 14.16 0 019.15 23a14.88 14.88 0 01.74-4.55l-7.45-5.77a23 23 0 000 20.65l7.46-5.78z" fill="#fbbc05"></path><path d="M23 46a21.92 21.92 0 0015.23-5.57L31 34.8a13.6 13.6 0 01-8 2.3 13.85 13.85 0 01-13.08-9.55l-7.44 5.77A22.94 22.94 0 0023 46z" fill="#34a853"></path><path d="M0 0h46v46H0V0z" fill="none"></path></svg></span>
+                                     <span>Continue with Google</span>
+                                    
+                                 </button>
+                             </div>
+                             <div class="social-apple">
+                                 <button class=" apple-btn">
+                                     <span style="left: -5px;"  class="apple-logo"><svg class="SVGInline-svg mr-xsm-svg" style="width: 24px;height: 24p;line-height: 38px" viewBox="0 0 48 48" width="24" height="24" xmlns="http://www.w3.org/1999/xlink"><g id="prefix__Apple" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="prefix__Apple_logo_black" transform="translate(7 4)" fill="#505863" fill-rule="nonzero"><path d="M34.266 31.172a21.528 21.528 0 01-2.234 3.867c-1.174 1.612-2.136 2.728-2.877 3.348-1.15 1.017-2.38 1.538-3.699 1.568-.946 0-2.088-.26-3.416-.786-1.333-.523-2.558-.782-3.678-.782-1.175 0-2.435.259-3.782.782-1.35.526-2.437.8-3.268.828-1.265.051-2.525-.484-3.783-1.61-.802-.674-1.807-1.83-3.01-3.467-1.29-1.748-2.351-3.775-3.182-6.086C.447 26.338 0 23.92 0 21.58c0-2.68.602-4.992 1.807-6.93a10.405 10.405 0 013.784-3.685 10.478 10.478 0 015.117-1.39c1.004 0 2.32.3 3.957.887 1.632.59 2.68.889 3.139.889.343 0 1.507-.35 3.48-1.047 1.866-.647 3.441-.914 4.731-.809 3.496.272 6.123 1.598 7.87 3.989-3.127 1.823-4.674 4.377-4.643 7.654.028 2.552.99 4.676 2.88 6.363A9.507 9.507 0 0035 29.318c-.23.644-.474 1.262-.734 1.854zM26.25.8c0 2-.76 3.869-2.273 5.597-1.826 2.056-4.035 3.243-6.43 3.056a5.998 5.998 0 01-.048-.758c0-1.92.868-3.976 2.41-5.656.77-.851 1.75-1.559 2.937-2.123C24.03.36 25.151.053 26.205 0c.03.267.044.535.044.8z" id="prefix__Shape"></path></g></g></svg></span>
+                                     <span class=""> Continue with Apple</span>
+                                 </button>
+                             </div>
+                        </div>
+                         <div class="orSeparator">
+                             <div class="orSeparator-left my-std"></div>
+                             <div class="orSeparator-between">or</div>
+                             <div class="orSeparator-right my-std"></div>
+                         </div>  
+                         <div class="">
+                            <div class="login-form__group">
+                                
+                                <input type="text" placeholder="Email Address" class="input-email input form-control">
+                            </div>
+                            <div class="login-form__group">
+                               <input type="password" placeholder="Password" class="input-pass input form-control">
+                           </div>
+                            <div class="login-form__singn">
+                                <button class="singn-btn">Sign In</button>
+                            </div>
+                           <div class="login-form__forgot">
+                               <button class="forgot-btn">Forgot Password</button>
+                           </div>
+                         </div>
+                         
+                    </div>
+                    
+                    <div class="justify-content-center login-form__aside">
+                        <p>Don't have an account 
+                            <a href=""> ?Sign Up</a></p>
+                    </div>
+               </div>
+            </div>
+        
+         
+          <div class="footer">
+                     <div class="footer-description">
+                        <p>Copyright © 2008-2021, Glassdoor, Inc. "Glassdoor" and logo are registered trademarks of Glassdoor, Inc</p>
+                        <div class="footer-link">
+                            <a href="">Terms of Use</a> <span>|</span>
+                             <a href="">Privacy & Cookies</a>
+                           </div>
+                    </div>
+                    
+          </div>
+    </div>
+</body>
+</html>
